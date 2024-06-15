@@ -11,7 +11,7 @@ services:
     image: sez54321/mse_2024_sezen_be:latest
     container_name: backend
     environment:
-      - spring.datasource.url=jdbc:postgresql://ip172-18-0-120-cpmj84i91nsg0094r6e0-5433.direct.labs.play-with-docker.com:5433/postgres?createDatabaseIfNotExist=true
+      - spring.datasource.url=jdbc:postgresql://172.17.0.1:5433/postgres?createDatabaseIfNotExist=true
     ports:
       - "8080:8080"
     depends_on:
