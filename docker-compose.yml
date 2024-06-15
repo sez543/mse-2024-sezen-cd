@@ -5,7 +5,7 @@ services:
     image: sez54321/mse_2024_sezen_fe:latest
     container_name: frontend
     environment:
-      - FORUM_BACKEND_SERVER=http://ip172-18-0-120-cpmj84i91nsg0094r6e0-8080.direct.labs.play-with-docker.com
+      - FORUM_BACKEND_SERVER="http://ip172-18-0-120-cpmj84i91nsg0094r6e0-8080.direct.labs.play-with-docker.com"
     ports:
       - "8079:8079"
 
