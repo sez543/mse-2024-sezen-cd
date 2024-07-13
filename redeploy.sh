@@ -41,7 +41,7 @@ do
         echo "Newer version detected for $service. Updating to $LATEST_TAG..."
         sed -i "s|${REPO}:${CURRENT_TAG}|${REPO}:${LATEST_TAG}|g" $COMPOSE_FILE
         docker-compose -f $COMPOSE_FILE pull $service
-        docker-compose -f $COMPOSE_FILE up --build -d $service
+        docker-compose -f $COMPOSE_FILE up -d $service
     else
         echo "No updates found for $service."
     fi
